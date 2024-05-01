@@ -14,7 +14,7 @@ To get started with the project, follow these steps:
 ## Features
 
 - Allows users to input their name and message.
-- Displays the user's name, message, and the date the message was written on the screen.
+- Displays the user's full name, message, and the date the message was written on the screen.
 
 ## Technologies Used
 

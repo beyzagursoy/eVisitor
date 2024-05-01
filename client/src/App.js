@@ -1,8 +1,8 @@
-import './App.css';
+import './App.css'
 
-import { useEffect, useState } from 'react';
-import axios from "axios";
-import Formtable from './components/Formtable';
+import { useEffect, useState } from 'react'
+import axios from "axios"
+import Formtable from './components/Formtable'
 
 axios.defaults.baseURL = "http://localhost:8080/"
 
@@ -11,7 +11,7 @@ function App() {
   const [formData , setFormData] = useState({
     fullname : "",
     message : "",
-  });
+  })
   const [dataList, setDataList] = useState([])
 
   const handleOnChange = (e) => {
@@ -31,7 +31,7 @@ function App() {
       getFetchData()
       setFormData({
         fullname : "", 
-        message : ""
+        message : "",
       })
     }
   }
@@ -57,7 +57,7 @@ function App() {
   return (
     <>
       <div className = "container">
-        <button className = "btn btn-add" onClick={() => setAddSection(true)}>Please leave your opinion about the museum by clicking here.</button>
+        <button className = "btn btn-add" onClick={() => setAddSection(true)}>Add Message</button>
 
         {
           addSection && (
@@ -102,4 +102,4 @@ function App() {
   );
 }
 
-export default App;
+export default App

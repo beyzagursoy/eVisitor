@@ -19,9 +19,9 @@ const schemaData  = mongoose.Schema({
 
 schemaData.methods.toJSON = function() {
     const obj = this.toObject();
-    obj.createdAt = obj.createdAt.toISOString(); // ISO formatına çevir
+    obj.createdAt = obj.createdAt.toUTCString(); 
     return obj;
-};
+}
 
 const visitorModel  = mongoose.model("visitors",schemaData)
 

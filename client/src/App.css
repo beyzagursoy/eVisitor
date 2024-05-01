@@ -27,7 +27,7 @@ body {
   font-size: 18px;
   border-radius: 5px;
   cursor: pointer;
-  margin-bottom: 10px; /* Butonun altındaki boşluk */
+  margin-bottom: 10px; 
   margin-top: 50px;
 }
 
@@ -102,7 +102,7 @@ body {
   margin-top: 50px;
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
   border-radius: 5px;
-  background-color: rgba(245,245,220, 0.8); /* Arkaplan rengi ve opaklık seviyesi ayarlayabilirsiniz */
+  background-color: rgba(245,245,220, 0.8); 
 }
 
 .tableContainer table thead tr {
@@ -119,17 +119,17 @@ body {
 .tableContainer table th {
   border-radius: 5px;
   background-color: #194064; 
-  color: #f5f5dc; /* Başlık hücrelerinin arka plan rengi */
+  color: #f5f5dc; 
 }
 
 .tableContainer table tbody tr {
-  margin-bottom: 10px; /* Satırlar arasındaki boşluk */
-  border: 1px solid #7b6666; /* Kutu çerçeve rengi ve kalınlığı */
+  margin-bottom: 10px; 
+  border: 1px solid #7b6666; 
   border-radius: 5px;
 }
 
 .tableContainer table tbody tr td {
-  padding: 12px 15px; /* Hücre içi içeriklerin iç boşluğu */
+  padding: 12px 15px; 
   text-align: center;
   border-bottom: 1px solid #f5f5dc;
   

@@ -1,0 +1,147 @@
+#background-video {
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -1;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f5f5dc;
+}
+
+.container {
+  padding: 10px;
+  max-width: fit-content;
+  margin: 50px auto;
+}
+
+.btn {
+  border: none;
+  padding: 7px 15px;
+  font-size: 18px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-bottom: 10px; /* Butonun altındaki boşluk */
+  margin-top: 50px;
+}
+
+.btn-add {
+  background: #194064;
+  font-weight: bold;
+  color: #f5f5dc;
+}
+
+.addContainer {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.2);
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.addContainer form {
+  width: 420px;
+  background-color: #f5f5dc;
+  backdrop-filter: blur(5px);
+  display: flex;
+  flex-direction: column;
+  padding: 50px 40px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  
+}
+
+.addContainer form label {
+  font-size: 18px;
+  font-weight: bold;
+  color: #194064;
+  background-color: #f5f5dc;
+}
+
+.addContainer form input {
+  font-size: 18px;
+  padding: 5px;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+
+.addContainer form button {
+  background-color: #194064;
+  color: #f5f5dc;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+
+
+.addContainer form .close-btn {
+  margin-left: auto;
+  font-size: 18px;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  border: 1px solid #194064;
+  color: #194064;
+  cursor: pointer;
+}
+
+.tableContainer {
+  margin-top: 50px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-color: rgba(245,245,220, 0.8); /* Arkaplan rengi ve opaklık seviyesi ayarlayabilirsiniz */
+}
+
+.tableContainer table thead tr {
+  background-color: rgba(245,245,220, 0.8);
+}
+
+.tableContainer table thead tr th,
+.tableContainer table tbody tr td {
+  min-width: 200px;
+  padding: 7px;
+  text-align: center;
+}
+
+.tableContainer table th {
+  border-radius: 5px;
+  background-color: #194064; 
+  color: #f5f5dc; /* Başlık hücrelerinin arka plan rengi */
+}
+
+.tableContainer table tbody tr {
+  margin-bottom: 10px; /* Satırlar arasındaki boşluk */
+  border: 1px solid #7b6666; /* Kutu çerçeve rengi ve kalınlığı */
+  border-radius: 5px;
+}
+
+.tableContainer table tbody tr td {
+  padding: 12px 15px; /* Hücre içi içeriklerin iç boşluğu */
+  text-align: center;
+  border-bottom: 1px solid #f5f5dc;
+  
+}
+
+body::before {
+  content: "eVisitor";
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 40px;
+  font-weight: bold;
+  color: #f5f5dc;
+}
